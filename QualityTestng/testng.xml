@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteSearch">
+	<parameter name="URL" value="https://www.google.com/"></parameter>
+	
+  <test  name="Chrome">
+  <parameter name="BrowserType" value="Chrome"></parameter>
+    <classes>
+      <class name="com.report.test.SearchS"/>
+    </classes>
+  </test>
+  
+   <test  name="FF">
+  <parameter name="BrowserType" value="Firefox"></parameter>
+    <classes>
+      <class name="com.report.test.SearchS"/>
+    </classes>
+  </test>
+  
+   <test  name="IE">
+  <parameter name="BrowserType" value="Internet Explorer"></parameter>
+    <classes>
+      <class name="com.report.test.SearchS"/>
+    </classes>
+  </test>
+</suite> 
+
